@@ -1,1 +1,1 @@
-[rsschool-cv](https://Finnko.github.io/rsschool-cv/cv)
+[rsschool-cv](https://finnko.github.io/rsschool-cv/cv)
