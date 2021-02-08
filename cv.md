@@ -9,14 +9,16 @@ Hi, I'm Alexey. I love the frontend and the entire ecosystem around it. \
 Opened to new knowledge and friends.
 
 ### Skills:
-HTML, CSS, JS, React 
+I'm always active and try to learn new technologies and tools. \
+HTML, CSS, A11y, Javascript, React, Redux, PS/Figma, a little bit Vue/Vuex
 
 ### Code examples:
 **movie-app:** https://github.com/Finnko/Online-movie-app \
 **travel-app:** https://github.com/Finnko/Big-Trip-app
 
 ### Experience:
-1.5 years of production experience
+I've worked in several design studios, current job - MERLION/Citilink. I also work as a mentor at HTML
+Academy.
 
 ### Education:
 
