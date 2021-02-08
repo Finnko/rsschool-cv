@@ -44,10 +44,10 @@ body {
   color: var(--text-color);
   background-color: var(--basic-white);
   background-image: linear-gradient(to right,
-      var(--basic-white) calc(50% - 468px),
+      var(--basic-white) calc(50% - 469px),
+      var(--gray) calc(50% - 468px),
       var(--gray) calc(50% - 467px),
-      var(--gray) calc(50% - 466px),
-      var(--basic-white) calc(50% - 466px));
+      var(--basic-white) calc(50% - 468px));
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -129,17 +129,11 @@ input[type="radio"].visually-hidden {
 }
 
 .social {
+  display: grid;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.social__item {
-  margin-bottom: 10px;
-}
-
-.social__item:last-child {
-  margin-bottom: 0;
 }
 
 .social__link {
@@ -221,8 +215,118 @@ input[type="radio"].visually-hidden {
     grid-template-columns: 205px repeat(11, 1fr);
   }
 
+  .header__info {
+    grid-column: 3 / 9;
+  }
+
   .header__logo {
     grid-column: 1 / 2;
     justify-self: center;
+  }
+
+  .info {
+    padding-left: 193px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: linear-gradient(to right,
+        var(--basic-white) 84px,
+        var(--gray) 84px,
+        var(--gray) 85px,
+        var(--basic-white) 85px
+    );
+  }
+
+  .main {
+    padding-top: 40px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header {
+    grid-template-columns: 135px 1fr;
+    align-items: start;
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .header__info {
+    grid-column: 2 / -1;
+  }
+
+  .social {
+    grid-template-columns: 50px 50px;
+    grid-column: 2 / -1;
+  }
+
+  .info {
+    padding-left: 162px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: linear-gradient(to right,
+        var(--basic-white) 64px,
+        var(--gray) 64px,
+        var(--gray) 65px,
+        var(--basic-white) 65px
+    );
+  }
+
+  .main {
+    padding-top: 30px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header {
+    grid-template-columns: 95px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .header__info {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    padding-left: 75px;
+  }
+
+  .social {
+    grid-template-columns: 50px 50px;
+    grid-row: 1 / 2;
+    justify-content: end;
+  }
+
+  .info {
+    padding-left: 92px;
+  }
+
+  .info__title {
+    margin-bottom: 4px;
+  }
+
+  .info__title::before {
+    left: -43px;
+    width: 35px;
+  }
+
+  .info__title::after {
+    left: -47px;
+    top: 13px;
+    width: 9px;
+    height: 9px;
+  }
+
+  .footer__text {
+    font-size: 9px;
   }
 }
