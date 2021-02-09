@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Khabirov</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sprite">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="linkedin" viewBox="0 0 32 32">
+      <g>
+        <rect fill="currentColor" height="23" width="7" y="9"/>
+        <path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z"
+              fill="currentColor"/>
+        <circle cx="3.5" cy="3.5" fill="currentColor" r="3.5"/>
+      </g>
+    </symbol>
+    <symbol id="telegram" viewBox="0 0 512 512">
+      <g>
+        <path
+            d="M484.689,98.231l-69.417,327.37c-5.237,23.105-18.895,28.854-38.304,17.972L271.2,365.631     l-51.034,49.086c-5.646,5.647-10.371,10.372-21.256,10.372l7.598-107.722L402.539,140.23c8.523-7.598-1.848-11.809-13.247-4.21     L146.95,288.614L42.619,255.96c-22.694-7.086-23.104-22.695,4.723-33.579L455.423,65.166     C474.316,58.081,490.85,69.375,484.689,98.231z"
+            fill="currentColor"/>
+      </g>
+    </symbol>
+  </svg>
+</div>
+<header class="header container">
+  <a href="/index.html" class="header__logo logo">
+    <img src="img/alex.jpg" width="425" height="428" alt="Фото Алексея Хабирова">
+  </a>
+  <div class="header__info">
+    <h1>
+      Alexey Khabirov
+    </h1>
+    <p>
+      Hi, I&rsquo;m Alexey. I&nbsp;love the frontend and the entire ecosystem around&nbsp;it.
+      Opened to&nbsp;new knowledge and friends.
+    </p>
+  </div>
+  <ul class="header__social social">
+    <li class="social__item">
+      <a href="https://t.me/alekshab"
+         target="_blank"
+         class="social__link"
+         rel="noreferrer noopener"
+      >
+        <span class="visually-hidden">Link to Telegram</span>
+        <svg width="24" height="24">
+          <use xlink:href="#telegram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="https://www.linkedin.com/in/aleksei-khabirov-ab08b017b/"
+         target="_blank"
+         class="social__link"
+         rel="noreferrer noopener"
+      >
+        <span class="visually-hidden">Link to Linkedin</span>
+        <svg width="20" height="20">
+          <use xlink:href="#linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</header>
+<main class="main container">
+  <section class="info">
+    <h2 class="info__title title">
+      Skills
+    </h2>
+    <p class="info__text">
+      I'm always active and try to learn new technologies and tools. <br>
+      HTML, CSS, A11y, Javascript, React, Redux, PS/Figma, some Vue/Vuex
+    </p>
+  </section>
+  <section class="info">
+    <h2 class="info__title title">
+      Experience
+    </h2>
+    <p class="info__text">
+      I've worked in several design studios, current job - MERLION/Citilink. <br> I also work as a mentor at HTML
+      Academy.
+    </p>
+  </section>
+  <section class="info">
+    <h2 class="info__title title">
+      Education
+    </h2>
+    <p class="info__text">
+      Moscow Technical University of Communications and Informatics (MTUCI), <br> Secure Communication Systems, 2002-2007
+    </p>
+  </section>
+  <section class="info">
+    <h2 class="info__title title">
+      Languages
+    </h2>
+    <p class="info__text">
+      English(A2-B1), Russian.
+    </p>
+  </section>
+</main>
+<footer class="footer container">
+  <p class="footer__text">Inspired by Ahmad Shadeed</p>
+</footer>
+</body>
+</html>
