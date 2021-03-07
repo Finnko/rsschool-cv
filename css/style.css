@@ -171,7 +171,6 @@ input[type="radio"].visually-hidden {
   color: var(--accent-color);
 }
 
-
 .info__title::before {
   position: absolute;
   left: -92px;
@@ -195,6 +194,39 @@ input[type="radio"].visually-hidden {
 
 .info__text {
   margin: 0;
+  margin-bottom: 15px;
+}
+
+.info__text a {
+  color: var(--text-color);
+}
+
+.info__text a:hover,
+.info__text a:focus {
+  text-decoration: underline;
+}
+
+.skills {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills__item {
+  position: relative;
+  padding-left: 25px;
+}
+
+.skills__item::before {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: var(--accent-color);
 }
 
 .footer {
